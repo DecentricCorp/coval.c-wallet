@@ -69,7 +69,7 @@ Ext.define('FW.view.Send', {
                             itemTpl: new Ext.XTemplate(
                                 '<div class="fw-pickerlist-item">' +
                                     '<div class="fw-pickerlist-icon">' +
-                                        '<img src="https://counterpartychain.io/content/images/icons/{[this.toLower(values.currency)]}.png">' + 
+                                        '<img src="resources/images/icons/{[this.toLower(values.currency)]}.png">' + 
                                     '</div>' +
                                     '<div class="fw-pickerlist-info">' +
                                         '<div class="fw-pickerlist-currency">{currency}</div>' +
@@ -87,7 +87,7 @@ Ext.define('FW.view.Send', {
                             itemTpl: new Ext.XTemplate(
                                 '<div class="fw-pickerlist-item">' +
                                     '<div class="fw-pickerlist-icon">' +
-                                        '<img src="https://counterpartychain.io/content/images/icons/{[this.toLower(values.currency)]}.png" width="35" height:>' + 
+                                        '<img src="resources/images/icons/{[this.toLower(values.currency)]}.png" width="35" height:>' + 
                                     '</div>' +
                                     '<div class="fw-pickerlist-info">' +
                                         '<div class="fw-pickerlist-currency">{currency}</div>' +
@@ -266,7 +266,7 @@ Ext.define('FW.view.Send', {
         var me  = this, 
             src = 'resources/images/wallet.png';
         if(currency)
-            src = 'https://counterpartychain.io/content/images/icons/' + currency.toLowerCase() + '.png';
+            src = 'resources/images/icons/' + currency.toLowerCase() + '.png';
         if(currency=='BTC')
             src = 'resources/images/icons/btc.png';
         me.image.setSrc(src);

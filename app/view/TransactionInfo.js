@@ -96,7 +96,7 @@
         me.issuer.hide();
         // Handle Sends
         if(data.type==1){
-            me.image.setSrc('https://counterpartychain.io/content/images/icons/' + data.currency.toLowerCase() + '.png');
+            me.image.setSrc('resources/images/icons/' + data.currency.toLowerCase() + '.png');
             me.iconholder.show();
             me.amount.show();
             me.destination.show();
@@ -106,7 +106,7 @@
             me.value.show();
         } else if(data.type==3){
             // Handle Issuances
-            me.image.setSrc('https://counterpartychain.io/content/images/icons/' + data.currency.toLowerCase() + '.png');
+            me.image.setSrc('resources/images/icons/' + data.currency.toLowerCase() + '.png');
             me.iconholder.show();
             me.amount.show();
             me.description.show();

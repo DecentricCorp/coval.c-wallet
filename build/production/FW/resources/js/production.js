@@ -1,48 +1,4 @@
-<!DOCTYPE HTML>
-<html manifest="cache.appcache" lang="en-US">
-<head>
-    <title>Circuits of Value</title>
-    <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self' data: gap: 'unsafe-inline' 'unsafe-eval'; 
-        style-src   'self' 'unsafe-inline'; 
-        img-src     'self' 'unsafe-inline' https://counterpartychain.io data: *;
-        media-src   'self' blob: ;
-        connect-src 'self' *">    
-    <link rel="SHORTCUT ICON" href="resources/images/icons/favicon.ico">
-    <style type="text/css">
-        /* Set custom background to display while app is loading */
-        body {
-            background: #fff;
-            background-image: url('resources/images/loading-logo.png') ;
-            background-repeat: no-repeat ;
-            background-position: center center;
-            background-size: 75% auto;
-        }
-    </style>
-    <script type="text/javascript">
-        var USE_TESTNET = false;
-        // window.onerror = function(error){  
-        //     console.log('error=',error);
-        // };
-        // Handle processing any data that is using one of our custom url schemes
-        function handleOpenURL(data){
-            var re = /^(bitcoin|counterparty|coval):/i;
-            if(data && re.test(data))
-                FW.LAUNCH_DATA = data;
-            setTimeout(function(){
-                var cmp = FW.app.getController('Main');
-                if(cmp)
-                    cmp.processLaunchData();
-            }, 0);
-        }
-    </script>
-    <!-- DO NOT INCLUDE JAVASCRIPT FILES HERE      -->
-    <!-- To include any files add them to app.json -->
-    <!-- The line below must be kept intact for Sencha Command to build your application -->
-    <script id="microloader" data-app="202fa8b2-901b-4586-8fea-5fa442de295d" type="text/javascript">/**
+/**
  * Sencha Blink
  * @author Jacky Nguyen <jacky@sencha.com>
  */
@@ -833,11 +789,3 @@
         }
     };
 })(this);
-Ext.blink({id:'202fa8b2-901b-4586-8fea-5fa442de295d'});</script>
-    <script id="microloader" type="text/javascript" src="sencha/app/microloader/development.js"></script>
-    <!--script id="microloader" type="text/javascript" src="/coval.c-wallet/resources/js/production.js"></script-->
-
-</head>
-<body>
-</body>
-</html>

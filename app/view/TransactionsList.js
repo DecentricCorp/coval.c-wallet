@@ -46,7 +46,7 @@ Ext.define('FW.view.TransactionsList', {
                     } else if(values.type==3){
                         src = 'resources/images/icons/issuance.png';
                     } else if(values.type==1 && values.currency!='BTC'){
-                        src = 'https://counterpartychain.io/content/images/icons/'  + String(values.currency).toLowerCase() + '.png';
+                        src = 'resources/images/icons/'  + String(values.currency).toLowerCase() + '.png';
                     }
                     icon = '<img src="' + src + '"/>';
                     return icon;

@@ -1,13 +1,5 @@
 
-var pages = []
-var pageHookElement = function(){
-    return $(".hook")
-} 
-var timerTick = 0
-const baseTickTimer = 500
-const tickDecayTrigger = 60
-const timerHalt = 85
-var hookedEngineTimeout
+var pages, timerTick, baseTickTimer, tickDecayTrigger, timerHalt, hookedEngineTimeout
 
 //Hook engine if off by default
 var hookEngineRunning = false
@@ -16,6 +8,7 @@ $(document).ready(function(){
     //$(".x-inner:not('.x-tabbar-inner')").css("background-color", "white")
     //$(".x-inner.x-tabbar-inner").css("background-color", "#374274")
     //$(".x-inner.x-toolbar-inner").css("background-color", "#374274")
+    initVariables()
     console.log("App Hooked")
     console.log("Starting to look for page hook")    
     //start check for page hook engine
@@ -24,6 +17,18 @@ $(document).ready(function(){
         registerListeners()
     })
 })
+
+function initVariables(){
+    pages = []
+    timerTick = 0
+    baseTickTimer = 500
+    tickDecayTrigger = 60
+    timerHalt = 85
+}
+
+var pageHookElement = function(){
+    return $(".hook")
+} 
 
 function hookCheckEngine(cb) {
     hookEngineRunning = true
