@@ -475,10 +475,12 @@ Ext.define('FW.controller.Main', {
             prefix = addr.substr(0,5),
             store  = Ext.getStore('Balances'),
             hostA  = (FW.WALLET_NETWORK==2) ? 'tbtc.blockr.io' : 'btc.blockr.io',
-            hostB  = (FW.WALLET_NETWORK==2) ? 'testnet.counterpartychain.io' : 'counterpartychain.io';
+            hostB  = (FW.WALLET_NETWORK==2) ? 'testnet.counterpartychain.io' : 'counterpartychain.io',
+            hostC  =  (FW.WALLET_NETWORK==2) ? 'decentric.org/api' : 'test.decentric.org/api',
+            hostAShowUnconfirmed = "?confirmations=0"
         // Get BTC balance
         me.ajaxRequest({
-            url: 'https://' + hostA + '/api/v1/address/info/' + address,
+            url: 'https://' + hostA + '/api/v1/address/info/' + address+ hostAShowUnconfirmed,
             success: function(o){
                 if(o.data){
                     var balance = (o.data.balance) ? numeral(o.data.balance).format('0.00000000') : '0.00000000';
@@ -505,7 +507,26 @@ Ext.define('FW.controller.Main', {
                 if(callback)
                     callback();
             }
-        }, true);            
+        }, true);   
+        // Get Loyyal balance MOCK
+        var mock = {"asset":"COVAL.R","amount":"50000.00000000"}
+        var item = mock                
+        var type = (item.asset=='COVAL.R') ? 3 : 4
+        me.updateAddressBalance(address, type, mock.asset, mock.amount)
+        /*me.ajaxRequest({
+            url: 'https://' + hostC + '/api/v1/address/info/' + address+ hostAShowUnconfirmed,
+            success: function(o){
+                if(o.data){
+                    var balance = (o.data.balance) ? numeral(o.data.balance).format('0.00000000') : '0.00000000';
+                    me.updateAddressBalance(address, 1, 'BTC', balance);
+                    me.saveStore('Balances');
+                }
+                var mock = {"asset":"COVAL.R","amount":"50000.00000000"}
+                
+                var type = (item.asset=='COVAL.R') ? 3 : 4;
+                me.updateAddressBalance(address, type, mock.asset, mock.amount);
+            }
+        });*/
     },
 
 
