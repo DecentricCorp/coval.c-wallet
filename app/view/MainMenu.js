@@ -13,7 +13,7 @@ Ext.define('FW.view.MainMenu', {
         width: 211,
         cls: 'fw-panel fw-mainmenu',
         items:[{
-            title: 'FreeWallet',
+            title: 'Circuits of Value',
             xtype: 'toolbar',
             height: 37,
             border: 0,

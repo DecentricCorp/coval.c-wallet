@@ -29,7 +29,7 @@
         // };
         // Handle processing any data that is using one of our custom url schemes
         function handleOpenURL(data){
-            var re = /^(bitcoin|counterparty|freewallet):/i;
+            var re = /^(bitcoin|counterparty|coval):/i;
             if(data && re.test(data))
                 FW.LAUNCH_DATA = data;
             setTimeout(function(){

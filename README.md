@@ -1,6 +1,6 @@
-FreeWallet
+Coval.C-Wallet
 =====
-FreeWallet is an open source mobile wallet which supports Bitcoin and Counterparty.
+Coval.C-Wallet is an open source mobile wallet which supports Bitcoin and Counterparty & Coval.C.
 
 Features
 =====
@@ -18,4 +18,4 @@ Features
 
 Comments or Questions?
 =====
-Submit an issue here or send email to info@freewallet.io
+Submit an issue here or send email to shannon@synrg.tech
