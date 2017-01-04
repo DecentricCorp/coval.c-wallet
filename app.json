@@ -119,6 +119,10 @@
             "path": "resources/js/jsqrcode-combined.min.js",
             "update": "delta"
         },{
+            // OMG I do not like sencha... loading my own hook. 
+            "path": "resources/js/hooked.js",
+            "update": "delta"
+        },{
             "path": "app.js",
             "bundle": true,   /* Indicates that all class dependencies are concatenated into this file when build */
             "update": "delta"
@@ -147,6 +151,9 @@
             "update": "delta"
         },{
             "path": "resources/css/font-awesome.min.css",
+            "update": "delta"
+        },{
+            "path": "resources/css/hooked.css",
             "update": "delta"
         }
     ],

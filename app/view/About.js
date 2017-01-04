@@ -30,7 +30,7 @@
                 html:'<p align="justify">FreeWallet is a free open-source mobile wallet which supports Bitcoin and tokens. FreeWallet uses public APIs available from coindaddy.io, blockr.io, chain.so, coinmarketcap.com, counterpartychain.io, and blocktrail.com.</p>'
             },{
                 margin: '10 0 0 0',
-                html:'<p align="justify"><b>Send a donation to support FreeWallet hosting and development.</b></p>' + 
+                html:'<div class="hook" data-page="view/About.js"></div><p align="justify"><b>Send a donation to support FreeWallet hosting and development.</b></p>' + 
                      '<p align="justify">FreeWallet is non-profit, self-funded, open source and community supported project. We appreciate any donations, and all donations go directly towards supporting future development.</p>'
             },{
                 xtype: 'button',

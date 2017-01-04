@@ -24,11 +24,12 @@
             },
             margin: '5 0 5 0',
             items:[{
-                html:'<center><img src="resources/images/logo.png" width="90%" style="max-width:350px;"></center>'
+                html:'<div class="overlay-wrapper"></div>'+
+                     '<center><img src="resources/images/logo.png" width="90%" style="max-width:350px;"></center>'
             },{
                 margin: '10 0 0 0',
                 cls: 'fw-transactioninfo-instructions',
-                html:'<center>Please select a transaction<br/>from the list on the left</center>'
+                html:'<div class="hook" data-page="view/tablet/Transactioninfo.js"></div><center>Please select a transaction<br/>from the list on the left</center>'
             }]
         },{
             xtype: 'container',

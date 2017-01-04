@@ -87,10 +87,11 @@
             },{
                 xtype: 'fieldset',
                 margin: '0 0 5 0',
+                class: 'coval',
                 defaults:{
                     xtype: 'textfield',
                     labelWidth: 80,
-                    readOnly: true
+                    readOnly: true,
                 },
                 items:[{
                     label: 'Total Supply',

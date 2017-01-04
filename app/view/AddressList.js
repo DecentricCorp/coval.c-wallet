@@ -29,7 +29,8 @@ Ext.define('FW.view.AddressList', {
                 '<table width="300">' +
                 '<tr>' +
                     '<td class="icon-btc icon-20"></td><td class="fw-addresslist-balance">{[this.getBalance(values, "BTC")]}</td>' +
-                    '<td class="icon-xcp icon-20"></td><td class="fw-addresslist-balance">{[this.getBalance(values, "XCP")]}</td>' +
+                    '<td class="icon-covaltest icon-20"></td><td class="fw-addresslist-balance">{[this.getBalance(values, "XCP")]}</td>' +
+                    '<td class="icon-covaltest icon-20"></td><td class="fw-addresslist-balance">{[this.getBalance(values, "COVAL")]}</td>' +
                 '</tr>' +
                 '</table>' +
             '</div>',

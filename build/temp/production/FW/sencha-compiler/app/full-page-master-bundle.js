@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /Users/shannoncode/repo/sencha-test2/app.js
+// @require /Users/shannoncode/repo/coval.c-wallet/app.js

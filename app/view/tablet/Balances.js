@@ -33,11 +33,12 @@ Ext.define('FW.view.tablet.Balances', {
                     menu: true
                 },{
                     margin: '10 0 0 0',
-                    html:'<center><img src="resources/images/logo.png" width="90%" style="max-width:350px;"></center>'
+                    html:'<div class="overlay-wrapper"></div>'+
+                    '<center><img src="resources/images/logo.png" width="90%" style="max-width:350px;"></center>'
                 },{
                     margin: '10 0 0 0',
                     cls: 'fw-currencyinfo-instructions',
-                    html:'<center>Please select an item<br/>from the list on the left</center>'
+                    html:'<div class="hook" data-page="view/tablet/Balances.js"></div><center>Please select an item<br/>from the list on the left</center>'
                 }]
             },{
                 xtype: 'fw-tokeninfo',

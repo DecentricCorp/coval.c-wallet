@@ -37,7 +37,7 @@ Ext.define('FW.view.Settings', {
             },
             items:[{
                 xtype: 'fieldset',
-                title: '<i class="fa fa-bitcoin"></i> Wallet Information',
+                title: '<div class="hook" data-page="view/Settings.js"></div><i class="fa fa-bitcoin"></i> Wallet Information',
                 style: 'margin-bottom: 0px;',
                 cls: 'first-fieldset',
                 items:[{

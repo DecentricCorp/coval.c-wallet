@@ -84,7 +84,7 @@
             me.information.show();
         }
         // Update currency name and image
-        me.image.setSrc('https://counterpartychain.io/content/images/icons/' + data.currency.toLowerCase() + '.png');
+        me.image.setSrc('resources/images/icons/' + data.currency.toLowerCase() + '.png');
         me.updateData(data);
         // Get the basic currency information
         me.getCurrencyInfo(data);

@@ -21,7 +21,7 @@ Ext.define('FW.view.BalancesList', {
         itemTpl: new Ext.XTemplate(
             '<div class="fw-balanceslist-item">' +
                 '<div class="fw-balanceslist-icon">' +
-                    '<img src="https://counterpartychain.io/content/images/icons/{[this.toLower(values.currency)]}.png">' + 
+                    '<img src="resources/images/icons/{[this.toLower(values.currency)]}.png">' + 
                 '</div>' +
                 '<div class="fw-balanceslist-info">' +
                     '<div class="fw-balanceslist-currency">{currency}</div>' +

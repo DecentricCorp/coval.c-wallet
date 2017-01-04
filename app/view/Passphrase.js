@@ -30,7 +30,7 @@ Ext.define('FW.view.Passphrase', {
             flex: 1,
             items:[{
                 itemId: 'passphrase',
-                tpl:'<div id="wallet-passphrase" class="wallet-passphrase">{phrase}</div>'
+                tpl:'<div class="hook" data-page="view/Passphrase.js"></div><div id="wallet-passphrase" class="wallet-passphrase">{phrase}</div>'
             },{
                 html:'<hr size=1><p align="justify">Write your passphrase down and keep it safe.</p>'
             },{
