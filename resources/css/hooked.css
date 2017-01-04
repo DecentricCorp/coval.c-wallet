@@ -60,7 +60,8 @@
 }
 
 .x-inner.x-vertical.x-align-center.x-pack-start.x-layout-box.x-scroll-scroller-vertical.x-size-monitored.x-paint-monitored.x-scroll-scroller,
-.x-dock-body
+.x-dock-body,
+.x-form .x-scroll-container
 {
     width: 100%;
     display: block;
@@ -77,12 +78,17 @@
 }
 #ext-fw-toolslist-1,
 #ext-container-2,
-.fw-panel,
+.x-form .x-scroll-container,
+/*.fw-panel,*/
 .x-scroll-bar-grid
 {
     /*background-color: #717899 !important;*/
     background-color: rgb(119, 128, 169) !important;
 }
+/*
+.x-inner.x-vertical.x-align-center.x-pack-start.x-layout-box.x-scroll-scroller-vertical.x-size-monitored.x-paint-monitored.x-scroll-scroller, .x-dock-body, .x-form .x-scroll-container
+
+*/
 
 .x-list .x-list-item-tpl
 {
@@ -120,6 +126,11 @@
 {
     border-bottom: 1px solid #525e7b;
 }
+
+/*.x-form .x-scroll-container
+{
+    background-color: #515d7b;
+}*/
 
 .overlay-wrapper
 {
