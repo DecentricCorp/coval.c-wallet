@@ -509,7 +509,7 @@ Ext.define('FW.controller.Main', {
             }
         }, true);   
         // Get Loyyal balance MOCK
-        var mock = {"asset":"COVAL.R","amount":"50000.00000000"}
+        var mock = {"asset":"COVAL.R","amount":"0"}
         var item = mock                
         var type = (item.asset=='COVAL.R') ? 3 : 4
         me.updateAddressBalance(address, type, mock.asset, mock.amount)
