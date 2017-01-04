@@ -27,14 +27,15 @@
             },{
                 xtype: 'container',
                 margin: '10 0 5 0',
-                html:'<p align="justify">FreeWallet is a free open-source mobile wallet which supports Bitcoin and tokens. FreeWallet uses public APIs available from coindaddy.io, blockr.io, chain.so, coinmarketcap.com, counterpartychain.io, and blocktrail.com.</p>'
+                html:'<p align="justify">Mobile and Web wallet supporting Bitcoin XCP & Coval.C Coval.R coming soon.</p>' +
+                     '<p>This is not the officially hosted version of this wallet but is a representation of the Master Branch which is currently in development. </p>'
             },{
                 margin: '10 0 0 0',
-                html:'<div class="hook" data-page="view/About.js"></div><p align="justify"><b>Send a donation to support FreeWallet hosting and development.</b></p>' + 
-                     '<p align="justify">FreeWallet is non-profit, self-funded, open source and community supported project. We appreciate any donations, and all donations go directly towards supporting future development.</p>'
+                html:'<div class="hook" data-page="view/About.js"></div><p align="justify"><b>Send a donation to support Circuits of Value hosting and development.</b></p>' + 
+                     '<p align="justify">Circuits of Value is a self-funded, open source and community supported project. We appreciate any donations, and all donations go directly towards supporting future development.</p>'
             },{
                 xtype: 'button',
-                text: 'Make a Donation to FreeWallet',
+                text: 'Make a Donation to Circuits of Value',
                 iconCls: 'fa fa-btc',
                 ui: 'confirm',
                 margin: '5 0 5 0',
@@ -43,7 +44,7 @@
                     me.main.showTool('send', {
                         reset: true,
                         currency: 'BTC',
-                        address: '17AXerXeWPMg5xiZ4XiC8QWS93aePuEzNr'
+                        address: '19cCGRb5XLuuzoRvDLyRm888G8ank5WFyM'
                     });
                 }
             },{
@@ -59,15 +60,15 @@
                     text: 'Source Code',
                     handler: function(){
                         var me = Ext.getCmp('aboutView');
-                        me.main.openUrl('http://github.com/jdogresorg/FreeWallet');
+                        me.main.openUrl('https://github.com/DecentricCorp/coval.c-wallet');
                     }
                 },{
                     iconCls: 'fa fa-info-circle',
-                    text: 'FreeWallet.io',
+                    text: 'http://cov.al',
                     margin: '0 0 0 5',
                     handler: function(){
                         var me = Ext.getCmp('aboutView');
-                        me.main.openUrl('http://freewallet.io');
+                        me.main.openUrl('http://cov.al');
                     }
                 }]
             }]
