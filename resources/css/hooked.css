@@ -1,8 +1,8 @@
 .x-toolbar-dark,
 .x-item-selected,
 .x-inner.x-tabbar-inner, 
-.x-inner.x-toolbar-inner,
-.x-inner.x-vertical.x-align-center.x-pack-start.x-layout-box.x-scroll-scroller-vertical.x-size-monitored.x-paint-monitored.x-scroll-scroller
+.x-inner.x-toolbar-inner/*,
+.x-inner.x-vertical.x-align-center.x-pack-start.x-layout-box.x-scroll-scroller-vertical.x-size-monitored.x-paint-monitored.x-scroll-scroller*/
 {
     /*background-color: #33395b !important;*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+100;Grey+3D+%232 */
@@ -11,7 +11,47 @@
     background: -webkit-linear-gradient(top,  #606c88 0%,#3f4c6b 100%) !important; /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #606c88 0%,#3f4c6b 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ) !important; /* IE6-9 */
+}
 
+.x-button-confirm
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#afb4ed+0,8f93ad+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5c6e8+0,645e87+51,606a89+100 */
+    background: #c5c6e8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c5c6e8 0%, #645e87 51%, #606a89 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #c5c6e8 0%,#645e87 51%,#606a89 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #c5c6e8 0%,#645e87 51%,#606a89 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5c6e8', endColorstr='#606a89',GradientType=0 ) !important; /* IE6-9 */
+}
+
+.x-button-confirm.x-button-pressing 
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606a89+0,645e87+49,c5c6e8+100 */
+    background: #606a89; /* Old browsers */
+    background: -moz-linear-gradient(top,  #606a89 0%, #645e87 49%, #c5c6e8 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #606a89 0%,#645e87 49%,#c5c6e8 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #606a89 0%,#645e87 49%,#c5c6e8 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606a89', endColorstr='#c5c6e8',GradientType=0 ) !important; /* IE6-9 */
+}
+
+.x-button-action
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d1c4e9+0,7a608b+51,62608b+100 */
+    background: #d1c4e9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d1c4e9 0%, #7a608b 51%, #62608b 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #d1c4e9 0%,#7a608b 51%,#62608b 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #d1c4e9 0%,#7a608b 51%,#62608b 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1c4e9', endColorstr='#62608b',GradientType=0 ) !important; /* IE6-9 */
+}
+
+.x-button-action.x-button-pressing
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62608b+0,7a608b+49,d1c4e9+100 */
+    background: #62608b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #62608b 0%, #7a608b 49%, #d1c4e9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #62608b 0%,#7a608b 49%,#d1c4e9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #62608b 0%,#7a608b 49%,#d1c4e9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62608b', endColorstr='#d1c4e9',GradientType=0 ); /* IE6-9 */
 }
 
 .x-toolbar-dark 
@@ -42,6 +82,7 @@
 {
     background-color: #717899 !important;
 }
+
 .overlay-wrapper
 {
     width: 100%;
