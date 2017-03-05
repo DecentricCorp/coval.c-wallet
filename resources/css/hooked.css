@@ -12,6 +12,10 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ) !important; /* IE6-9 */
 }
 
+.container {
+    margin-left: 0px !important ;
+}
+
 .x-button-confirm,
 .x-item-selected
 {
